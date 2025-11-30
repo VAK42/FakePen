@@ -1,4 +1,4 @@
-import { prisma } from "./client";
+import { prisma } from "./client.server";
 import { hashPassword } from "../services/auth.server";
 async function seed() {
   const hashedPassword = await hashPassword("password");
